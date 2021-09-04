@@ -1,0 +1,18 @@
+@AbapCatalog.sqlViewName: 'ZVISTA'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Empleados Interface'
+define root view ZINTERFACE
+  as select from zempleados
+{
+  key e_number,
+      e_name,
+      e_department,
+      status,
+      job_code,
+      job_title,
+      email,
+      start_date,
+      end_date
+}
