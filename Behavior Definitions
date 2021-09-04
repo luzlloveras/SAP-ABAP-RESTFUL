@@ -1,0 +1,13 @@
+managed; //implementation in class zbp_i_empl_logali unique;
+
+define behavior for z_i_empl_logali alias Employees
+persistent table zempl_logali
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  field ( readonly, numbering : managed ) e_number;
+  create;
+  update;
+  delete;
+}
