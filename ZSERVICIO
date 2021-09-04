@@ -1,0 +1,4 @@
+@EndUserText.label: 'Empleados'
+define service ZSERVICIO {
+  expose ZPROJECTION as Empleados;
+}
