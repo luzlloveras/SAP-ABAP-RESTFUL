@@ -1,0 +1,18 @@
+@EndUserText.label : 'Tabla de empleados'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table zempleados {
+  key client   : abap.clnt not null;
+  key e_number : sysuuid_x16 not null;
+  e_name       : abap.char(50);
+  e_department : abap.numc(8);
+  status       : abap.char(1);
+  job_code     : abap.numc(4);
+  job_title    : abap.char(20);
+  email        : abap.char(60);
+  start_date   : abap.dats;
+  end_date     : abap.dats;
+
+}
