@@ -1,0 +1,4 @@
+@EndUserText.label: 'Employees - Logali'
+define service Z_sd_empl_logali {
+  expose z_c_empl_logali as Employees;
+}
