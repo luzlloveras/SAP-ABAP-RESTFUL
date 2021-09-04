@@ -1,0 +1,17 @@
+@EndUserText.label: 'Empleados Projection'
+@AccessControl.authorizationCheck: #CHECK
+@Metadata.allowExtensions: true
+define root view entity ZPROJECTION
+  as projection on ZINTERFACE
+{
+
+  key e_number     as EmployeeNumber,
+      e_name       as EmployeeName,
+      e_department as EmployeeDepartment,
+      status       as EmployeeStatus,
+      job_code     as JobCode,
+      job_title    as JobTitle,
+      email        as Email,
+      start_date   as StartDate,
+      end_date     as EndDate
+}
